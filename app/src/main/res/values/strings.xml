@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Book-Store</string>
+      <string name="message_book_share">Hi, I am buying a book named  %1$s  using an
+android application, its price is %2$s. If you also want to enjoy it, install the
+same app on your mobile from \n https://play.google.com/store/apps/details?id=net.xorsat.book-store</string>
+</resources>

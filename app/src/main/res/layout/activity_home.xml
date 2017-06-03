@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    tools:context="com.xorsat.net.book_store.HomeActivity">
+    <LinearLayout
+        android:id="@+id/CustomApplicationBar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <TextView
+            style="@style/HomeCustomApplicationBar"
+            android:text="B"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorYellow"/>
+        <TextView
+            style="@style/HomeCustomApplicationBar"
+            android:text="O"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorRed"/>
+        <TextView
+            style="@style/HomeCustomApplicationBar"
+            android:text="O"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorBlack"/>
+        <TextView
+            style="@style/HomeCustomApplicationBar"
+            android:text="K"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorBrown"/>
+        <TextView
+            style="@style/HomeCustomApplicationBar"
+            android:text="-"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorOrange"/>
+        <TextView
+            style="@style/HomeCustomApplicationBar"
+            android:text="S"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorYellow"/>
+        <TextView
+            style="@style/HomeCustomApplicationBar"
+            android:text="T"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorGreen"/>
+        <TextView
+            style="@style/HomeCustomApplicationBar"
+            android:text="O"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorLightBlue"/>
+        <TextView
+            style="@style/HomeCustomApplicationBar"
+            android:text="R"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPink"/>
+        <TextView
+            style="@style/HomeCustomApplicationBar"
+            android:text="E"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorYellow"/>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_below="@+id/CustomApplicationBar"
+        android:id="@+id/ItemsScrollBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout style="@style/MainLinearLayout">
+
+            <LinearLayout style="@style/HomeOuterLinearLayout">
+
+                <LinearLayout
+                    android:clickable="true"
+                    android:onClick="goToShopActivity"
+                    style="@style/HomeInnerLinearLayout">
+
+                    <ImageView
+                        style="@style/HomeImageView"
+                        android:src="@drawable/shop" />
+
+                    <TextView
+                        style="@style/HomeTextView"
+                        android:text="Shop"
+                        android:textColor="@color/colorYellow" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/HomeInnerLinearLayout">
+
+                    <ImageView
+                        style="@style/HomeImageView"
+                        android:src="@drawable/heart" />
+
+                    <TextView
+                        style="@style/HomeTextView"
+                        android:text="Favourites"
+                        android:textColor="@color/colorRed" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/HomeOuterLinearLayout">
+
+                <LinearLayout style="@style/HomeInnerLinearLayout">
+
+                    <ImageView
+                        style="@style/HomeImageView"
+                        android:src="@drawable/cart" />
+
+                    <TextView
+                        style="@style/HomeTextView"
+                        android:text="Cart"
+                        android:textColor="@color/colorBlack" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/HomeInnerLinearLayout">
+
+                    <ImageView
+                        style="@style/HomeImageView"
+                        android:src="@drawable/orders" />
+
+                    <TextView
+                        style="@style/HomeTextView"
+                        android:text="Orders"
+                        android:textColor="@color/colorBrown" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/HomeOuterLinearLayout">
+
+                <LinearLayout style="@style/HomeInnerLinearLayout">
+
+                    <ImageView
+                        style="@style/HomeImageView"
+                        android:src="@drawable/profile" />
+
+                    <TextView
+                        style="@style/HomeTextView"
+                        android:text="Profile"
+                        android:textColor="@color/colorOrange" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/HomeInnerLinearLayout">
+
+                    <ImageView
+                        style="@style/HomeImageView"
+                        android:src="@drawable/settings" />
+
+                    <TextView
+                        style="@style/HomeTextView"
+                        android:text="Setting"
+                        android:textColor="@color/colorGreen" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/HomeOuterLinearLayout">
+
+                <LinearLayout style="@style/HomeInnerLinearLayout">
+
+                    <ImageView
+                        style="@style/HomeImageView"
+                        android:src="@drawable/aboutus" />
+
+                    <TextView
+                        style="@style/HomeTextView"
+                        android:text="About Us"
+                        android:textColor="@color/colorLightBlue" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/HomeInnerLinearLayout">
+
+                    <ImageView
+                        style="@style/HomeImageView"
+                        android:src="@drawable/contactus" />
+
+                    <TextView
+                        style="@style/HomeTextView"
+                        android:text="Contact Us"
+                        android:textColor="@color/colorPink" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
